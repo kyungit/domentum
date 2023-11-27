@@ -27,7 +27,7 @@ function onSuccess (position) {
         //city.innerText=data.name;
         //temp.innerText=(data.main.temp-32)/1.8;
 
-        let weatherArr = ['sun','cloud','rain','snow','normal'];
+        let weatherArr = ['sun','cloud','mist','snow','normal'];
         let weatherdescription = data.weather[0].description; //날씨값 ex) 구름, 비, 바람 등.. 영어로 출력
 
         span1.innerText=weatherdescription; //날씨
