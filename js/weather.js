@@ -49,7 +49,7 @@ function onSuccess (position) {
                 span4.appendChild(weaImage);
             }
 
-            span3.innerText = Math.round(data.main.temp-273.15);
+            span3.innerText = `${Math.round(data.main.temp - 273.15)}°C`;
           
         }//for end
     })
