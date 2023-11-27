@@ -188,10 +188,7 @@
     overflow-y: auto; /* Y축으로 스크롤이 필요한 경우 스크롤을 표시함 */
   }
 
-  #lstTodo {
-    -ms-overflow-style: none; /* 스크롤바 숨김 */
-  }
-   
+
 #lstTodo li {
     display: flex;
     align-items: center;
@@ -210,3 +207,17 @@
     flex-grow: 1; /* 텍스트가 체크박스를 제외한 나머지 영역을 차지하도록 함 */
     text-align: left; /* 텍스트를 좌측 정렬로 설정 */
 }
+
+
+#lstTodo::-webkit-scrollbar {
+    width: 10px; /* 스크롤바의 너비 */
+  }
+  
+  #lstTodo::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF; /* 원하는 스크롤바 색상으로 변경 */
+  }
+
+  #lstTodo li button {
+    margin-right: 30px; /* "X" 버튼을 오른쪽으로 50px 이동 */
+    margin-left: 20px;
+  }
