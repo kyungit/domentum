@@ -69,7 +69,6 @@ function saveTodos(todos) {
   localStorage.setItem(KEY_TODOS, JSON.stringify(todos));
 }
 
-
 function handleSubmitTodo(event) {
   event.preventDefault();
   const inputTodoValue = inputTodo.value;
@@ -80,9 +79,9 @@ function handleSubmitTodo(event) {
     completed: false, // 초기 상태는 체크되지 않은 상태
   };
   todos.push(newTodoObj);
+  saveTodos(todos); // 이 부분을 추가하여 todos 배열을 로컬 스토리지에 저장
   displayTodo(newTodoObj);
 }
-
 
 // 체크박스 상태가 변경될 때 호출되는 함수에서 saveTodos를 호출하도록 변경
 formTodo.addEventListener("submit", handleSubmitTodo);
