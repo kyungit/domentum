@@ -2,7 +2,7 @@
     display: none;
 }
 
-#Login {
+#Login, #h1 {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -10,15 +10,6 @@
     color: white; /* 텍스트 색상은 필요에 따라 조절하세요. */
     background-color: none;
 }
-#h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* 텍스트 색상은 필요에 따라 조절하세요. */
-    background-color: none;
-}
-
 #clock {
     font-size: 130px;
     position: absolute;
